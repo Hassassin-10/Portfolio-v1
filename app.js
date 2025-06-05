@@ -45,3 +45,15 @@ document.querySelectorAll('.nav-link').forEach(link => {
     }
   });
 });
+
+const menuToggle = document.getElementById('menu-toggle');
+const sidebar = document.querySelector('.sidebar');
+const closeIcon = document.querySelector('.close-icon');
+
+menuToggle.addEventListener('click', () => {
+  sidebar.classList.add('active');
+});
+
+closeIcon.addEventListener('click', () => {
+  sidebar.classList.remove('active');
+});
